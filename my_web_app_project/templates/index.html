@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block body %}
+
+{% for i in web %}
+<a href="{% url 'my_web_app:detail' i.id %}">{{i.name}}</a>
+{{i.desc}}<br>
+<img src = "{{i.image.url}}" height="100" width="100" <br>
+
+{% endfor %}
+{% endblock %}
+
+<!--<a href="detail/{{i.id }}"> {{i.name}}</a><br>-->
