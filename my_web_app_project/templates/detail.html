@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% block body %}
-{{web.name}}
-{{web.desc}}
-<img src = "{{web.image.url}}" height="100" width="100">
+
+<h3>{{web.name}}</h3><br>
+{{web.desc}}<br>
+<img src = "{{web.image.url}}" height="100" width="100"><br>
 {% endblock %}
